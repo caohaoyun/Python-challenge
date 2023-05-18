@@ -37,7 +37,7 @@ with open(election_data,'r') as csvfile:
             winner = x
         #The percentage of votes each candidate won
         count_percentage = count/ballot_count
-        print(x + ": " + str(round(count_percentage*100, 2)) + "% (" + str(count) + ")")  
+        print(x + ": " + str(round(count_percentage*100, 3)) + "% (" + str(count) + ")")  
     print("-----------------------------------------") 
     print("Winner: " + winner )
     print("-----------------------------------------")
@@ -49,9 +49,9 @@ with open("analysis_results.txt","w") as textfile:
 "-----------------------------------------\n"
 "Total Votes: 369711\n"
 "-----------------------------------------\n"
-"Charles Casper Stockham: 23.05% (85213)\n"
-"Diana DeGette: 73.81% (272892)\n"
-"Raymon Anthony Doane: 3.14% (11606)\n"
+"Charles Casper Stockham: 23.049% (85213)\n"
+"Diana DeGette: 73.812% (272892)\n"
+"Raymon Anthony Doane: 3.139% (11606)\n"
 "-----------------------------------------\n"
 "Winner: Diana DeGette\n"
 "-----------------------------------------\n")
